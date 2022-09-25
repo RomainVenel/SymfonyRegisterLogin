@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    </head>
+    <body>
+        {% block body %}
+            {% block navbar %}
+                <div class="navbar">
+                    <a id="logoHref" href="{{ path('index') }}"><img id="logo" src="{{ asset('assets/images/logo.png') }}"></a>
+                    {% block pageTitle %}{% endblock %}
+                </div>
+            {% endblock %}
+        {% endblock %}
+    </body>
+</html>

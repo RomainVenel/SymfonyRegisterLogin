@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+
+    {% block navbar %}{{ parent() }}
+        {% block pageTitle %}<h1 class="titlePage">Formulaire de connexion</h1>{% endblock %}
+    {% endblock %}
+
+    <div class="formControl">
+        {% if failed is defined %}
+            <div class="failedMessage">{{ failed }}</div>
+        {% endif %}
+        <div class="formConnexion">
+            {{ form(form) }}
+        </div>
+    </div>
+
+{% endblock %}

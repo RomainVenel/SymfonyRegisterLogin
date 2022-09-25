@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    {% block navbar %}{{ parent() }}
+        {% block pageTitle %}<h1 class="titlePage">Bienvenue chez Studapart</h1>{% endblock %}
+    {% endblock %}
+
+    {% if success is defined %}
+        <div class="success">{{ success }}</div>
+    {% endif %}
+
+    <div id="userChoice">
+        <div id="registerChoice">
+            <a class="btn btnRegister" href="{{ path('register') }}">S'inscrire</a>
+        </div>
+        <div class="btn" id="connexionChoice">
+            <a class="btn btnConnexion" href="{{ path('connexion') }}">Se connecter</a>
+        </div>
+    </div>
+
+{% endblock %}

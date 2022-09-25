@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HomePage{% endblock %}
+
+{% block body %}
+
+    {% block navbar %}{{ parent() }}
+        {% block pageTitle %}<h1 class="titlePage">Bonjour {{ user.firstname ~ ' ' ~ user.lastname }}</h1>{% endblock %}
+        <a class="btn btnLogout" href="{{ path('logout') }}">Se déconnecter</a>
+    {% endblock %}
+
+{% endblock %}

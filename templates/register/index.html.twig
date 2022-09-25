@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Formulaire d'inscription{% endblock %}
+
+{% block body %}
+
+    {% block navbar %}{{ parent() }}
+        {% block pageTitle %}<h1 class="titlePage">Formulaire d'inscription</h1>{% endblock %}
+    {% endblock %}
+
+    {{ form(form) }}
+
+{% endblock %}

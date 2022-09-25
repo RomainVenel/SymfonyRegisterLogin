@@ -1,0 +1,126 @@
+label.required:after {
+    content: " * ";
+    color: red;
+}
+
+#register input[type=text], #register input[type=password], #register input[type=email], .inputLogin {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#register input[type=submit]:hover {
+    background-color: #45a049;
+}
+#register div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar .titlePage {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.titlePage {
+    display: none;
+}
+
+#logoHref {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+}
+
+#logo {
+    width: 70px;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+#userChoice {
+    display: flex;
+    margin-top: 150px;
+}
+
+#registerChoice {
+    display: flex;
+    margin: auto;
+    justify-content: left;
+}
+
+#connexionChoice {
+    display: flex;
+    margin: auto;
+    justify-content: right;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnLogout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 28px;
+    color: #fff;
+    background-color: #f44336;
+}
+
+.btnRegister {
+    color: #fff;
+    background-color: #43a147;
+}
+
+.btnConnexion {
+    color: #fff;
+    background-color: #43a147;
+}
+
+.formConnexion {
+    display: flex;
+    justify-content: center;
+}
+
+.formControl {
+    margin-top: 150px;
+}
+
+.passwordLogin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.failedMessage {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: red;
+}
